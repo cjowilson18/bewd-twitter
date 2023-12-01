@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2023_11_16_182804) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "user_id"
+    t.index ["user_id"], name: "index_sessions_on_user_id"
   end
 
   create_table "tweets", force: :cascade do |t|
